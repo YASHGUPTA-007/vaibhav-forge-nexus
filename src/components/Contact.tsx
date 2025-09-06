@@ -81,7 +81,7 @@ const Contact = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
-            <span className="font-mono text-primary">03.</span>
+            <span className="font-mono text-cyber-cyan shadow-glow">03.</span>
             <span className="ml-4 bg-gradient-cyber bg-clip-text text-transparent">
               Get In Touch
             </span>

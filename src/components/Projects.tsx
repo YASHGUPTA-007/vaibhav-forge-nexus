@@ -71,16 +71,16 @@ const Projects = () => {
 
   const getTechColor = (tech: string) => {
     const colors: { [key: string]: string } = {
-      'Django REST': 'bg-cyber-green/20 text-cyber-green border-cyber-green/30',
-      'Django': 'bg-cyber-green/20 text-cyber-green border-cyber-green/30',
-      'ReactJS': 'bg-cyber-blue/20 text-cyber-blue border-cyber-blue/30',
-      'JavaScript': 'bg-cyber-purple/20 text-cyber-purple border-cyber-purple/30',
-      'Python': 'bg-cyber-green/20 text-cyber-green border-cyber-green/30',
-      'MySQL': 'bg-primary/20 text-primary border-primary/30',
-      'HTML/CSS': 'bg-cyber-pink/20 text-cyber-pink border-cyber-pink/30',
-      'NumPy': 'bg-cyber-green/20 text-cyber-green border-cyber-green/30',
-      'Pandas': 'bg-cyber-green/20 text-cyber-green border-cyber-green/30',
-      'Chart.js': 'bg-cyber-purple/20 text-cyber-purple border-cyber-purple/30',
+      'Django REST': 'bg-cyber-green/20 text-cyber-green border-cyber-green/40',
+      'Django': 'bg-cyber-green/20 text-cyber-green border-cyber-green/40',
+      'ReactJS': 'bg-cyber-blue/20 text-cyber-blue border-cyber-blue/40',
+      'JavaScript': 'bg-cyber-purple/20 text-cyber-purple border-cyber-purple/40',
+      'Python': 'bg-cyber-green/20 text-cyber-green border-cyber-green/40',
+      'MySQL': 'bg-cyber-orange/20 text-cyber-orange border-cyber-orange/40',
+      'HTML/CSS': 'bg-cyber-pink/20 text-cyber-pink border-cyber-pink/40',
+      'NumPy': 'bg-cyber-cyan/20 text-cyber-cyan border-cyber-cyan/40',
+      'Pandas': 'bg-cyber-violet/20 text-cyber-violet border-cyber-violet/40',
+      'Chart.js': 'bg-cyber-yellow/20 text-cyber-yellow border-cyber-yellow/40',
     };
     return colors[tech] || 'bg-muted/20 text-muted-foreground border-muted/30';
   };
@@ -91,12 +91,12 @@ const Projects = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
-            <span className="font-mono text-primary">02.</span>
-            <span className="ml-4 bg-gradient-cyber bg-clip-text text-transparent">
+            <span className="font-mono text-cyber-purple shadow-electric">02.</span>
+            <span className="ml-4 bg-gradient-cyber-alt bg-clip-text text-transparent">
               My Projects
             </span>
           </h2>
-          <div className="w-24 h-1 bg-gradient-cyber mx-auto mb-8" />
+          <div className="w-24 h-1 bg-gradient-cyber-alt mx-auto mb-8" />
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             A showcase of my technical skills through real-world applications and innovative solutions.
           </p>
