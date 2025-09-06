@@ -51,24 +51,24 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-hero">
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       <div className="container mx-auto px-6 text-center z-20 relative">
         {/* Main Content */}
         <div className="max-w-4xl mx-auto">
           {/* Greeting */}
           <div className="mb-6 animate-fade-in">
-            <span className="font-mono text-cyber-blue text-lg tracking-wide shadow-glow">
+            <span className="font-mono text-primary text-lg tracking-wide">
               Hello, World! I'm
             </span>
           </div>
           
-          {/* Name with Enhanced Glitch Effect */}
+          {/* Name with Glitch Effect */}
           <h1 className="text-6xl md:text-8xl font-bold mb-6 animate-slide-up">
-            <span className="bg-gradient-cyber bg-clip-text text-transparent hover:animate-glitch cursor-default drop-shadow-2xl">
+            <span className="bg-gradient-cyber bg-clip-text text-transparent hover:animate-glitch cursor-default">
               VAIBHAV
             </span>
             <br />
-            <span className="text-foreground font-mono font-normal text-4xl md:text-6xl drop-shadow-lg">
+            <span className="text-foreground font-mono font-normal text-4xl md:text-6xl">
               GUPTA
             </span>
           </h1>
@@ -76,9 +76,9 @@ const Hero = () => {
           {/* Typing Animation */}
           <div className="mb-8 animate-slide-up" style={{ animationDelay: '0.2s' }}>
             <div className="text-2xl md:text-3xl font-mono h-12 flex items-center justify-center">
-              <span className="text-cyber-green mr-2 shadow-neon">$</span>
-              <span className="text-cyber-blue shadow-glow">{displayText}</span>
-              <span className="animate-pulse text-cyber-cyan ml-1 shadow-electric">|</span>
+              <span className="text-muted-foreground mr-2">$</span>
+              <span className="text-primary">{displayText}</span>
+              <span className="animate-pulse text-primary ml-1">|</span>
             </div>
           </div>
           
@@ -88,42 +88,42 @@ const Hero = () => {
             I build scalable applications using Django, React, and modern web technologies.
           </p>
           
-          {/* Enhanced CTA Buttons */}
+          {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16 animate-slide-up" style={{ animationDelay: '0.6s' }}>
             <Button
               onClick={() => scrollToSection('projects')}
-              className="group relative bg-gradient-cyber hover:bg-gradient-cyber-alt text-primary-foreground px-8 py-4 text-lg font-mono rounded-xl shadow-cyber transition-all duration-300 hover:shadow-glow overflow-hidden border border-cyber-blue/30"
+              className="group relative bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg font-mono rounded-xl shadow-cyber transition-all duration-300 hover:shadow-glow overflow-hidden"
             >
               <span className="relative z-10">View My Work</span>
-              <div className="absolute inset-0 bg-gradient-cyber-alt opacity-0 group-hover:opacity-30 transition-opacity duration-300" />
+              <div className="absolute inset-0 bg-gradient-cyber opacity-0 group-hover:opacity-20 transition-opacity duration-300" />
             </Button>
             
             <Button
               variant="outline"
-              className="group border-cyber-purple/50 text-cyber-purple hover:bg-cyber-purple/10 hover:border-cyber-purple px-8 py-4 text-lg font-mono rounded-xl transition-all duration-300 shadow-electric"
+              className="group border-primary/50 text-primary hover:bg-primary/10 hover:border-primary px-8 py-4 text-lg font-mono rounded-xl transition-all duration-300"
             >
               <Download className="w-5 h-5 mr-2" />
               Download CV
             </Button>
           </div>
           
-          {/* Enhanced Social Links */}
+          {/* Social Links */}
           <div className="flex justify-center space-x-8 mb-16 animate-slide-up" style={{ animationDelay: '0.8s' }}>
             <a 
               href="https://linkedin.com/in/vaibhav-gupta-559a8240"
               target="_blank"
               rel="noopener noreferrer"
-              className="group p-4 rounded-xl bg-gradient-card border border-cyber-blue/30 hover:border-cyber-blue/60 transition-all duration-300 hover:shadow-glow"
+              className="group p-4 rounded-xl bg-card/50 border border-primary/20 hover:border-primary/50 transition-all duration-300 hover:shadow-glow"
             >
-              <Linkedin className="w-6 h-6 text-cyber-blue group-hover:animate-float" />
+              <Linkedin className="w-6 h-6 text-primary group-hover:animate-float" />
             </a>
             <a 
               href="https://github.com/vaibhav"
               target="_blank"
               rel="noopener noreferrer"
-              className="group p-4 rounded-xl bg-gradient-card border border-cyber-green/30 hover:border-cyber-green/60 transition-all duration-300 hover:shadow-neon"
+              className="group p-4 rounded-xl bg-card/50 border border-primary/20 hover:border-primary/50 transition-all duration-300 hover:shadow-glow"
             >
-              <Github className="w-6 h-6 text-cyber-green group-hover:animate-float" />
+              <Github className="w-6 h-6 text-primary group-hover:animate-float" />
             </a>
           </div>
         </div>
@@ -132,7 +132,7 @@ const Hero = () => {
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
           <button
             onClick={() => scrollToSection('about')}
-            className="flex flex-col items-center text-muted-foreground hover:text-cyber-cyan transition-colors duration-300"
+            className="flex flex-col items-center text-muted-foreground hover:text-primary transition-colors duration-300"
           >
             <span className="font-mono text-sm mb-2">Scroll Down</span>
             <ChevronDown className="w-5 h-5" />
@@ -140,18 +140,15 @@ const Hero = () => {
         </div>
       </div>
       
-      {/* Enhanced Decorative Elements */}
-      <div className="absolute top-20 left-10 text-cyber-green/40 font-mono text-sm animate-float shadow-neon">
+      {/* Decorative Elements */}
+      <div className="absolute top-20 left-10 text-primary/20 font-mono text-sm animate-float">
         {'<developer>'}
       </div>
-      <div className="absolute bottom-20 right-10 text-cyber-blue/40 font-mono text-sm animate-float shadow-glow" style={{ animationDelay: '2s' }}>
+      <div className="absolute bottom-20 right-10 text-primary/20 font-mono text-sm animate-float" style={{ animationDelay: '2s' }}>
         {'</coder>'}
       </div>
-      <div className="absolute top-1/2 left-5 text-cyber-purple/40 font-mono text-xs animate-float shadow-electric" style={{ animationDelay: '4s' }}>
+      <div className="absolute top-1/2 left-5 text-primary/20 font-mono text-xs animate-float" style={{ animationDelay: '4s' }}>
         {'// Building the future'}
-      </div>
-      <div className="absolute top-1/3 right-20 text-cyber-pink/40 font-mono text-xs animate-float" style={{ animationDelay: '6s' }}>
-        {'console.log("Hello!");'}
       </div>
     </section>
   );

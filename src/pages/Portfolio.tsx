@@ -1,6 +1,5 @@
 import Navigation from '@/components/Navigation';
 import BackgroundEffects from '@/components/BackgroundEffects';
-import FloatingElements from '@/components/FloatingElements';
 import Hero from '@/components/Hero';
 import About from '@/components/About';
 import Projects from '@/components/Projects';
@@ -8,12 +7,9 @@ import Contact from '@/components/Contact';
 
 const Portfolio = () => {
   return (
-    <div className="min-h-screen bg-gradient-primary text-foreground overflow-x-hidden">
+    <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
       {/* Background Effects */}
       <BackgroundEffects />
-      
-      {/* Floating Interactive Elements */}
-      <FloatingElements />
       
       {/* Navigation */}
       <Navigation />
